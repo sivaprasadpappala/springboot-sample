@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKERHUB_USER = "sivaprasadpappala"
         IMAGE_NAME = "springboot-sample"
-        KUBECONFIG_CREDENTIAL = "kubeconfig-minikube"  // Jenkins credential ID
+        KUBECONFIG_CREDENTIAL = "kubeconfig-cred"  // Jenkins credential ID
     }
 
     stages {
