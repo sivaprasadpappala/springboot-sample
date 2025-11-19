@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = "your-dockerhub-username"
+        DOCKERHUB_USER = "sivaprasadpappala"
         IMAGE_NAME = "springboot-sample"
         KUBECONFIG_CREDENTIAL = "kubeconfig-minikube"  // Jenkins credential ID
     }
@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/yourRepo/springboot-sample.git'
+                git 'https://github.com/sivaprasadpappala/springboot-sample.git'
             }
         }
 
